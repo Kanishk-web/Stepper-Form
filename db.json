@@ -1,0 +1,152 @@
+{
+  "recruitmentForm": [
+    {
+      "id": "8887"
+    },
+
+    {
+      "id": "49f2",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "country": "India"
+      },
+      "profileData": {
+        "image": "C:\\fakepath\\MainAfter.jpg",
+        "profile": "Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
+      },
+      "educationData": {
+        "qualification": "MCA",
+        "universityName": "IGNOU",
+        "startYear": "2021-01-01",
+        "endYear": "2023-01-01",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2023-01-01",
+        "certificationEndYear": "2024-01-01",
+        "addMore": ""
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-01-01",
+        "state": "Banglore",
+        "addMore": ""
+      }
+    },
+    {
+      "id": "9bf8",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "country": "India"
+      },
+      "profileData": {
+        "image": "C:\\fakepath\\MainAfter.jpg",
+        "profile": " Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
+      },
+      "educationData": {
+        "qualification": "MCA",
+        "universityName": "IGNOU",
+        "startYear": "2021-01-01",
+        "endYear": "2023-01-01",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2023-01-01",
+        "certificationEndYear": "2024-01-01",
+        "addMore": ""
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-01-01",
+        "state": "Banglore",
+        "addMore": ""
+      }
+    },
+    {
+      "id": "c7f7",
+      "detailsData": {
+        "firstName": "Kanishk",
+        "lastName": "Kanishk",
+        "email": "kanishk@gmail.com",
+        "number": 7417258627,
+        "address": "kempyt Mussoorie",
+        "state": "Uttarakhand",
+        "country": "India"
+      },
+      "profileData": {
+        "image": "C:\\fakepath\\MainAfter.jpg",
+        "profile": "Hello my name is john and I am from delhi."
+      },
+      "educationData": {
+        "qualification": "MCA",
+        "universityName": "IGNOU",
+        "startYear": "2021-01-01",
+        "endYear": "2023-01-01",
+        "hasCertification": "no",
+        "certificationName": "",
+        "instituteName": "",
+        "certificationStartYear": "",
+        "certificationEndYear": "",
+        "addMore": ""
+      },
+      "experienceData": {
+        "hasExperience": "no",
+        "companyName": "",
+        "position": "",
+        "startYear": "",
+        "state": "",
+        "addMore": ""
+      }
+    },
+    {
+      "id": "67a2",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "country": "India"
+      },
+      "profileData": {
+        "image": "C:\\fakepath\\MainAfter.jpg",
+        "profile": "Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
+      },
+      "educationData": {
+        "qualification": "MCA",
+        "universityName": "IGNOU",
+        "startYear": "2021-01-01",
+        "endYear": "2023-01-01",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2023-01-01",
+        "certificationEndYear": "2024-01-01",
+        "addMore": ""
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2025-01-01",
+        "state": "Banglore",
+        "addMore": ""
+      }
+    }
+  ]
+}

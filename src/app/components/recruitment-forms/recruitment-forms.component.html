@@ -1,0 +1,789 @@
+<div class="container step mt-5" id="content" #content>
+  <!-- First step -->
+
+  <div *ngIf="currentStep === 1">
+    <div class="steps-container" id="steps1">
+      <div class="steps-nav">
+        <div class="step" icon="fa fa-pencil-alt" id="1">
+          <i class="fa fa-info-circle"></i>
+          Fill Out Your Details
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="form-first">
+        <form [formGroup]="detailsForm" (ngSubmit)="onSubmit()">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name : </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="firstName"
+                name="firstName"
+                placeholder="Enter Your First Name"
+              />
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('firstName')?.touched &&
+                  detailsForm.get('firstName')?.invalid
+                "
+              >
+                <small
+                  *ngIf="detailsForm.get('firstName')?.errors?.['required']"
+                  >This is required</small
+                >
+                <small
+                  *ngIf="detailsForm.get('firstName')?.errors?.['minlength']"
+                  >Minimum 3 characters required.</small
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name : </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="lastName"
+                name="lastName"
+                placeholder="Enter Your Last Name"
+              />
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('lastName')?.touched &&
+                  detailsForm.get('lastName')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('lastName')?.errors?.['required']"
+                  >This is required</small
+                >
+                <small
+                  *ngIf="detailsForm.get('lastName')?.errors?.['minlength']"
+                  >Minimum 3 characters required.</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email : </label>
+              <input
+                type="email"
+                class="form-control"
+                formControlName="email"
+                name="email"
+                placeholder="Enter Your Email"
+              />
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('email')?.touched &&
+                  detailsForm.get('email')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('email')?.errors?.['required']"
+                  >This is required</small
+                >
+                <small *ngIf="detailsForm.get('email')?.errors?.['pattern']"
+                  >Please write correct pattern</small
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="number" class="form-label">Phone : </label>
+              <input
+                type="number"
+                class="form-control"
+                formControlName="number"
+                name="number"
+                placeholder="Enter Your Number"
+              />
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('number')?.touched &&
+                  detailsForm.get('number')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('number')?.errors?.['required']"
+                  >This is required.</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col">
+              <label for="address" class="form-label">Address : </label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="address"
+                name="address"
+                placeholder="Enter Your Address"
+              />
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('address')?.touched &&
+                  detailsForm.get('address')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('address')?.errors?.['required']"
+                  >This is required</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="state" class="form-label">State : </label>
+              <select class="form-select" formControlName="state" name="state">
+                <option disabled selected>Select State</option>
+                <option>Uttarakhand</option>
+                <option>Himachal</option>
+                <option>Punjab</option>
+                <option>Rajsthan</option>
+                <option>Uttar Pradesh</option>
+                <option>Haryana</option>
+                <option>Bhiar</option>
+                <option>New Delhi</option>
+                <option>Madya Pradesh</option>
+              </select>
+
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('state')?.touched &&
+                  detailsForm.get('state')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('state')?.errors?.['required']"
+                  >This is required.</small
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="country" class="form-label">Country</label>
+              <select
+                class="form-select"
+                formControlName="country"
+                name="country"
+              >
+                <option disabled selected>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Russia</option>
+                <option>Japan</option>
+                <option>China</option>
+                <option>Nepal</option>
+                <option>Australia</option>
+                <option>England</option>
+                <option>NewzeLand</option>
+              </select>
+
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  detailsForm.get('country')?.touched &&
+                  detailsForm.get('country')?.invalid
+                "
+              >
+                <small *ngIf="detailsForm.get('country')?.errors?.['required']"
+                  >This is required</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-10 mt-5 mb-5 button">
+            <button
+              class="btn btn-primary"
+              (click)="nextStep()"
+              [disabled]="!detailsForm.valid"
+            >
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second step -->
+
+  <div *ngIf="currentStep === 2">
+    <div class="steps-container" id="steps2">
+      <div class="steps-nav">
+        <div class="step" id="1">
+          <i class="fa fa-user-check"></i> Profile Details
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="form-second">
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <label for="file" class="form-label">Upload Image</label>
+              <br />
+              <img [src]="url" width="250" />
+              <br />
+              <br />
+              <input
+                type="file"
+                class="form-control"
+                (change)="onselectFile($event)"
+                accept="images"
+                formControlName="image"
+              />
+            </div>
+            <div class="col-md-8">
+              <label for="profile" class="form-label">Profile : </label>
+              <textarea
+                class="form-control"
+                formControlName="profile"
+                name="profile"
+                cols="30"
+                rows="9"
+                placeholder="Write more about you ..."
+              ></textarea>
+              <div
+                class="text-danger"
+                role="alert"
+                *ngIf="
+                  profileForm.get('profile')?.touched &&
+                  profileForm.get('profile')?.invalid
+                "
+              >
+                <small *ngIf="profileForm.get('profile')?.errors?.['required']"
+                  >This is required</small
+                >
+                <small *ngIf="profileForm.get('profile')?.errors?.['minlength']"
+                  >Minimum 30 characters are required.</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-10 mt-5 mb-5 d-flex button justify-content-between"
+          >
+            <button class="btn btn-dark" (click)="prevStep()">Back</button>
+            <button
+              class="btn btn-primary"
+              (click)="nextStep()"
+              [disabled]="!profileForm.valid"
+            >
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third step -->
+
+  <div *ngIf="currentStep === 3">
+    <div class="steps-container" id="steps3">
+      <div class="steps-nav">
+        <div class="step" id="1">
+          <i class="fa-solid fa-book-open"></i> Education Details
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="form-third">
+        <form [formGroup]="educationForm" (ngSubmit)="onSubmit()">
+          <div>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="qualification" class="form-label"
+                  >Qualification :
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="qualification"
+                  name="qualification"
+                  placeholder="Enter Your Qualification"
+                />
+
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    educationForm.get('qualification')?.touched &&
+                    educationForm.get('qualification')?.invalid
+                  "
+                >
+                  <small
+                    *ngIf="educationForm.get('qualification')?.errors?.['required']"
+                    >This is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="universityName" class="form-label"
+                  >University Name :
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="universityName"
+                  name="universityName"
+                  placeholder="Enter Your University Name"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    educationForm.get('universityName')?.touched &&
+                    educationForm.get('universityName')?.invalid
+                  "
+                >
+                  <small
+                    *ngIf="educationForm.get('universityName')?.errors?.['required']"
+                    >This is required</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="startYear" class="form-label">Start Year : </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  formControlName="startYear"
+                  name="startYear"
+                  placeholder="Enter Your Start Year"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    educationForm.get('startYear')?.touched &&
+                    educationForm.get('startYear')?.invalid
+                  "
+                >
+                  <small
+                    *ngIf="educationForm.get('startYear')?.errors?.['required']"
+                    >This is required</small
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="endYear" class="form-label">End Year : </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  formControlName="endYear"
+                  name="endYear"
+                  placeholder="Enter Your End Year"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    educationForm.get('endYear')?.touched &&
+                    educationForm.get('endYear')?.invalid
+                  "
+                >
+                  <small
+                    *ngIf="educationForm.get('endYear')?.errors?.['required']"
+                    >This is required</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <br />
+            <br />
+
+            <!-- Do You  Have  any Certification? -->
+            <div>
+              <label>Do you have any certification?</label>
+              <br />
+              <br />
+              <input
+                type="radio"
+                id="certYes"
+                formControlName="hasCertification"
+                [(ngModel)]="hasCertification"
+                value="yes"
+                (change)="onCertificationChange('yes')"
+              />
+              <label for="certYes">Yes</label>
+
+              <br />
+              <input
+                type="radio"
+                id="certNo"
+                formControlName="hasCertification"
+                [(ngModel)]="hasCertification"
+                value="no"
+                (change)="onCertificationChange('no')"
+              />
+              <label for="certNo">No</label>
+            </div>
+
+            <br />
+            <br />
+
+            <!-- Certification fields (only shown if 'Yes' is selected) -->
+            <div *ngIf="educationForm.get('hasCertification')?.value === 'yes'">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="certificationName" class="form-label"
+                    >Certification Name</label
+                  >
+                  <input
+                    class="form-control"
+                    id="certificationName"
+                    formControlName="certificationName"
+                    type="text"
+                    placeholder="Enter Your Certification Name"
+                  />
+                  <div
+                    class="text-danger"
+                    role="alert"
+                    *ngIf="
+                      educationForm.get('certificationName')?.invalid &&
+                      educationForm.get('certificationName')?.touched
+                    "
+                  >
+                    <small
+                      *ngIf="educationForm.get('certificationName')?.errors?.['required']"
+                    >
+                      This is required</small
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="instituteName" class="form-label"
+                    >Institute Name</label
+                  >
+                  <input
+                    class="form-control"
+                    id="instituteName"
+                    formControlName="instituteName"
+                    type="text"
+                    placeholder="Enter Your Institute Name"
+                  />
+                  <div
+                    class="text-danger"
+                    role="alert"
+                    *ngIf="
+                      educationForm.get('instituteName')?.invalid &&
+                      educationForm.get('instituteName')?.touched
+                    "
+                  >
+                    <small
+                      *ngIf="educationForm.get('instituteName')?.errors?.['required']"
+                    >
+                      This is required</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="certificationStartYear" class="form-label"
+                    >Start Year</label
+                  >
+                  <input
+                    class="form-control"
+                    id="certificationStartYear"
+                    formControlName="certificationStartYear"
+                    type="date"
+                    placeholder="Enter Your Start Year"
+                  />
+                  <div
+                    class="text-danger"
+                    role="alert"
+                    v
+                    *ngIf="
+                      educationForm.get('certificationStartYear')?.invalid &&
+                      educationForm.get('certificationStartYear')?.touched
+                    "
+                  >
+                    <small
+                      *ngIf="educationForm.get('certificationStartYear')?.errors?.['required']"
+                    >
+                      This is required</small
+                    >
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="certificationEndYear" class="form-label"
+                    >End Year</label
+                  >
+                  <input
+                    class="form-control"
+                    id="certificationEndYear"
+                    formControlName="certificationEndYear"
+                    type="date"
+                    placeholder="Enter Your End Year"
+                  />
+                  <div
+                    class="text-danger"
+                    role="alert"
+                    *ngIf="
+                      educationForm.get('certificationEndYear')?.invalid &&
+                      educationForm.get('certificationEndYear')?.touched
+                    "
+                  >
+                    <small
+                      *ngIf="educationForm.get('certificationEndYear')?.errors?.['required']"
+                    >
+                      This is required</small
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <br />
+            </div>
+          </div>
+
+          <div
+            class="col-md-10 mt-5 mb-5 d-flex button justify-content-between"
+          >
+            <button class="btn btn-dark" (click)="prevStep()">Back</button>
+            <button
+              class="btn btn-primary"
+              (click)="nextStep()"
+              [disabled]="!educationForm.valid"
+            >
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fourth step -->
+
+  <div *ngIf="currentStep === 4">
+    <div class="steps-container" id="steps4">
+      <div class="steps-nav">
+        <div class="step" icon="fa fa-pencil-alt" id="1">Experience</div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="form-fourth">
+        <form [formGroup]="experienceForm" (ngSubmit)="onSubmit()">
+          <!-- Do you have Experience ? -->
+          <div>
+            <label>Do you have any Experience ?</label>
+            <br />
+            <br />
+            <input
+              type="radio"
+              id="certYes"
+              formControlName="hasExperience"
+              [(ngModel)]="hasExperience"
+              value="yes"
+              (change)="onExperienceChange('yes')"
+            />
+            <label for="certYes">Yes</label>
+
+            <br />
+
+            <input
+              type="radio"
+              id="certNo"
+              formControlName="hasExperience"
+              [(ngModel)]="hasExperience"
+              value="no"
+              (change)="onExperienceChange('no')"
+            />
+
+            <label for="certNo">No</label>
+          </div>
+
+          <br />
+          <br />
+
+          <!-- Experience fields (only shown if 'Yes' is selected) -->
+          <div *ngIf="experienceForm.get('hasExperience')?.value === 'yes'">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="companyName" class="form-label">Company Name</label>
+                <input
+                  class="form-control"
+                  id="companyName"
+                  formControlName="companyName"
+                  type="text"
+                  placeholder="Enter Your Company Name"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    experienceForm.get('companyName')?.invalid &&
+                    experienceForm.get('companyName')?.touched
+                  "
+                >
+                  <small
+                    *ngIf="experienceForm.get('companyName')?.errors?.['required']"
+                  >
+                    This is required</small
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="position" class="form-label">Job Title Name</label>
+                <input
+                  class="form-control"
+                  id="position"
+                  formControlName="position"
+                  type="text"
+                  placeholder="Enter Your Job Title Name"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    experienceForm.get('position')?.invalid &&
+                    experienceForm.get('position')?.touched
+                  "
+                >
+                  <small
+                    *ngIf="experienceForm.get('position')?.errors?.['required']"
+                  >
+                    This is required</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="startYear" class="form-label">Start Year</label>
+                <input
+                  class="form-control"
+                  id="startYear"
+                  formControlName="startYear"
+                  type="date"
+                  placeholder="Enter Your Start Year"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    experienceForm.get('startYear')?.invalid &&
+                    experienceForm.get('startYear')?.touched
+                  "
+                >
+                  <small
+                    *ngIf="experienceForm.get('startYear')?.errors?.['required']"
+                  >
+                    This is required</small
+                  >
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">State</label>
+                <input
+                  class="form-control"
+                  id="state"
+                  formControlName="state"
+                  type="text"
+                  placeholder="Enter State name"
+                />
+                <div
+                  class="text-danger"
+                  role="alert"
+                  *ngIf="
+                    experienceForm.get('state')?.invalid &&
+                    experienceForm.get('state')?.touched
+                  "
+                >
+                  <small
+                    *ngIf="experienceForm.get('state')?.errors?.['required']"
+                  >
+                    This is required</small
+                  >
+                </div>
+              </div>
+            </div>
+
+            <br />
+          </div>
+
+          <div
+            class="col-md-10 mt-5 mb-5 d-flex button justify-content-between"
+          >
+            <button class="btn btn-dark" (click)="prevStep()">Back</button>
+            <button
+              class="btn btn-success"
+              [disabled]="!experienceForm.valid"
+              (click)="nextStep()"
+            >
+              Submitted
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fifth step -->
+
+  <div *ngIf="currentStep === 5">
+    <div class="steps-container" id="steps5">
+      <div class="steps-nav">
+        <div class="step" id="1"><i class="fa fa-check"></i>Completed</div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="form-fifth">
+        <h1>Thank you! Your Form will be Submitted.</h1>
+        <br />
+        <br />
+        <br />
+
+        <div class="col-md-10 mt-5 mb-5 d-flex button justify-content-between">
+          <button class="btn btn-primary mt-2" (click)="openPDF()">
+            Preview PDF
+          </button>
+          <button class="btn btn-success mt-2" (click)="generatePDF()">
+            Download PDF
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
