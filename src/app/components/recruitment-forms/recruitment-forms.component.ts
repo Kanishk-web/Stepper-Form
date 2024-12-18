@@ -44,7 +44,6 @@ export class RecruitmentFormsComponent {
     });
 
     this.profileForm = this._formBuilder.group({
-      // image: [null, [Validators.required]],
       profile: ['', [Validators.required, Validators.minLength(30)]],
     });
 
