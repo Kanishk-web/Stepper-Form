@@ -3,9 +3,8 @@
     {
       "id": "8887"
     },
-
     {
-      "id": "49f2",
+      "id": "9be4",
       "detailsData": {
         "firstName": "John",
         "lastName": "Doe",
@@ -13,89 +12,16 @@
         "number": 1234567891,
         "address": "delhi",
         "state": "New Delhi",
-        "country": "India"
+        "city": "Gurugram"
       },
       "profileData": {
-        "image": "C:\\fakepath\\MainAfter.jpg",
-        "profile": "Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
+        "profile": "jkdfakjf ajdkjakfjkjfka djfahjdfkfjak;"
       },
       "educationData": {
-        "qualification": "MCA",
-        "universityName": "IGNOU",
-        "startYear": "2021-01-01",
-        "endYear": "2023-01-01",
-        "hasCertification": "yes",
-        "certificationName": "Web Development",
-        "instituteName": "MIS Infotech",
-        "certificationStartYear": "2023-01-01",
-        "certificationEndYear": "2024-01-01",
-        "addMore": ""
-      },
-      "experienceData": {
-        "hasExperience": "yes",
-        "companyName": "ABC IT company",
-        "position": "Frontend Developer",
-        "startYear": "2024-01-01",
-        "state": "Banglore",
-        "addMore": ""
-      }
-    },
-    {
-      "id": "9bf8",
-      "detailsData": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "john@gmail.com",
-        "number": 1234567891,
-        "address": "delhi",
-        "state": "New Delhi",
-        "country": "India"
-      },
-      "profileData": {
-        "image": "C:\\fakepath\\MainAfter.jpg",
-        "profile": " Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
-      },
-      "educationData": {
-        "qualification": "MCA",
-        "universityName": "IGNOU",
-        "startYear": "2021-01-01",
-        "endYear": "2023-01-01",
-        "hasCertification": "yes",
-        "certificationName": "Web Development",
-        "instituteName": "MIS Infotech",
-        "certificationStartYear": "2023-01-01",
-        "certificationEndYear": "2024-01-01",
-        "addMore": ""
-      },
-      "experienceData": {
-        "hasExperience": "yes",
-        "companyName": "ABC IT company",
-        "position": "Frontend Developer",
-        "startYear": "2024-01-01",
-        "state": "Banglore",
-        "addMore": ""
-      }
-    },
-    {
-      "id": "c7f7",
-      "detailsData": {
-        "firstName": "Kanishk",
-        "lastName": "Kanishk",
-        "email": "kanishk@gmail.com",
-        "number": 7417258627,
-        "address": "kempyt Mussoorie",
-        "state": "Uttarakhand",
-        "country": "India"
-      },
-      "profileData": {
-        "image": "C:\\fakepath\\MainAfter.jpg",
-        "profile": "Hello my name is john and I am from delhi."
-      },
-      "educationData": {
-        "qualification": "MCA",
-        "universityName": "IGNOU",
-        "startYear": "2021-01-01",
-        "endYear": "2023-01-01",
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-04",
         "hasCertification": "no",
         "certificationName": "",
         "instituteName": "",
@@ -113,7 +39,7 @@
       }
     },
     {
-      "id": "67a2",
+      "id": "062c",
       "detailsData": {
         "firstName": "John",
         "lastName": "Doe",
@@ -121,31 +47,329 @@
         "number": 1234567891,
         "address": "delhi",
         "state": "New Delhi",
-        "country": "India"
+        "city": "Gurugram"
       },
       "profileData": {
-        "image": "C:\\fakepath\\MainAfter.jpg",
-        "profile": "Hello my name is johen and I am from delhi and currently I am working in\n banglore in TCS compnay.  I am frontend developer."
+        "profile": "jkdfakjf ajdkjakfjkjfka djfahjdfkfjak;"
       },
       "educationData": {
-        "qualification": "MCA",
-        "universityName": "IGNOU",
-        "startYear": "2021-01-01",
-        "endYear": "2023-01-01",
-        "hasCertification": "yes",
-        "certificationName": "Web Development",
-        "instituteName": "MIS Infotech",
-        "certificationStartYear": "2023-01-01",
-        "certificationEndYear": "2024-01-01",
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-04",
+        "hasCertification": "no",
+        "certificationName": "",
+        "instituteName": "",
+        "certificationStartYear": "",
+        "certificationEndYear": "",
+        "addMore": ""
+      },
+      "experienceData": {
+        "hasExperience": "no",
+        "companyName": "",
+        "position": "",
+        "startYear": "",
+        "state": "",
+        "addMore": ""
+      }
+    },
+    {
+      "id": "8856",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jkdfakjf ajdkjakfjkjfka djfahjdfkfjak;"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-04",
+        "hasCertification": "no",
+        "certificationName": "",
+        "instituteName": "",
+        "certificationStartYear": "",
+        "certificationEndYear": "",
         "addMore": ""
       },
       "experienceData": {
         "hasExperience": "yes",
         "companyName": "ABC IT company",
         "position": "Frontend Developer",
-        "startYear": "2025-01-01",
-        "state": "Banglore",
+        "startYear": "2024-12-05",
+        "state": "New Delhi",
         "addMore": ""
+      }
+    },
+    {
+      "id": "3865",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "kjda;jdklf fdkajdkljaf jfadfjdkla;j fkdjal;"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-10",
+        "endYear": "2024-12-04",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-03"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-19",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "d770",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "91c5",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "7fc6",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "b6de",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "e74e",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "e8a3",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
+      }
+    },
+    {
+      "id": "af9b",
+      "detailsData": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@gmail.com",
+        "number": 1234567891,
+        "address": "delhi",
+        "state": "New Delhi",
+        "city": "Gurugram"
+      },
+      "profileData": {
+        "profile": "jfdkajkd kkjdakaj;kdjk jdkahdjha jdahjdahjd jdahjdlkadj"
+      },
+      "educationData": {
+        "qualification": "BA",
+        "universityName": "HNBHU",
+        "startYear": "2024-12-11",
+        "endYear": "2024-12-20",
+        "hasCertification": "yes",
+        "certificationName": "Web Development",
+        "instituteName": "MIS Infotech",
+        "certificationStartYear": "2024-12-04",
+        "certificationEndYear": "2024-12-19"
+      },
+      "experienceData": {
+        "hasExperience": "yes",
+        "companyName": "ABC IT company",
+        "position": "Frontend Developer",
+        "startYear": "2024-12-04",
+        "state": "New Delhi"
       }
     }
   ]

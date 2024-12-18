@@ -20,14 +20,14 @@ import autoTable from 'jspdf-autotable';
 export class RecruitmentFormsComponent {
   @ViewChild('content', { static: false }) el!: ElementRef;
 
+  currentStep = 1;
+
   detailsForm: FormGroup;
   profileForm: FormGroup;
   educationForm: FormGroup;
   experienceForm: FormGroup;
 
   showCertificationDetails: boolean = false;
-
-  currentStep = 1;
 
   constructor(
     private _formBuilder: FormBuilder,
@@ -40,11 +40,11 @@ export class RecruitmentFormsComponent {
       number: ['', Validators.required],
       address: ['', Validators.required],
       state: ['', Validators.required],
-      country: ['', Validators.required],
+      city: ['', Validators.required],
     });
 
     this.profileForm = this._formBuilder.group({
-      image: [null, [Validators.required]],
+      // image: [null, [Validators.required]],
       profile: ['', [Validators.required, Validators.minLength(30)]],
     });
 
@@ -58,7 +58,6 @@ export class RecruitmentFormsComponent {
       instituteName: [''],
       certificationStartYear: [''],
       certificationEndYear: [''],
-      addMore: [''],
     });
 
     this.experienceForm = this._formBuilder.group({
@@ -67,11 +66,10 @@ export class RecruitmentFormsComponent {
       position: ['', Validators.required],
       startYear: ['', Validators.required],
       state: ['', Validators.required],
-      addMore: [''],
     });
   }
 
-  url = '../../assets/images/personeImage.jpg';
+  url = '../../assets/images/profile-image.jpg';
   imageFile: File | null = null;
 
   onselectFile(event: any) {
@@ -82,6 +80,52 @@ export class RecruitmentFormsComponent {
       reader.onload = (e: any) => {
         this.url = e.target.result;
       };
+    }
+  }
+
+  isStepValid(step: number): boolean {
+    switch (step) {
+      case 1:
+        return this.detailsForm.valid;
+      case 2:
+        return this.profileForm.valid;
+      case 3:
+        return this.educationForm.valid;
+      case 4:
+        return this.experienceForm.valid;
+      default:
+        return false;
+    }
+  }
+
+  // Go to Next Step
+  nextStep() {
+    if (this.isStepValid(this.currentStep)) {
+      this.currentStep++;
+    } else {
+      this.markFieldsAsTouched(this.currentStep);
+    }
+  }
+
+  // Mark all fields touched to show errors
+  markFieldsAsTouched(step: number) {
+    const form =
+      step === 1
+        ? this.detailsForm
+        : step === 2
+        ? this.profileForm
+        : step === 3
+        ? this.educationForm
+        : this.experienceForm;
+
+    Object.keys(form.controls).forEach((control) => {
+      form.get(control)?.markAsTouched();
+    });
+  }
+
+  prevStep() {
+    if (this.currentStep > 1) {
+      this.currentStep--;
     }
   }
 
@@ -110,18 +154,6 @@ export class RecruitmentFormsComponent {
           console.log('Error submitting the form : ', error);
         }
       );
-    }
-  }
-
-  nextStep() {
-    if (this.currentStep < 5) {
-      this.currentStep++;
-    }
-  }
-
-  prevStep() {
-    if (this.currentStep > 1) {
-      this.currentStep--;
     }
   }
 
